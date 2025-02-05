@@ -83,7 +83,7 @@
         const player = { x: 180, y: 450, width: 20, height: 20, color: "blue" };
         const cars = [];
         let carSpeed = 3;
-        const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbwkKXvL_H770Zh0SwbcORsNTIbNfZnv7_3OsK1x9zEOX8JKsdg2N5euIiH4su3K_mGmkA/exec"; 
+        const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbxb82qnnHVZlaywKSdojKhjdvoB62J6SjJnIWs184qpPQ8nKfF5HXt_MBgbDng9YYBOWA/exec"; 
 
         function setCookie(name, value, days) {
             document.cookie = `${name}=${JSON.stringify(value)};max-age=${days * 86400};path=/`;
@@ -151,7 +151,7 @@
 
     const scoreData = { name: name, score: score };
 
-    fetch("https://script.google.com/macros/s/AKfycbwkKXvL_H770Zh0SwbcORsNTIbNfZnv7_3OsK1x9zEOX8JKsdg2N5euIiH4su3K_mGmkA/exec", {
+    fetch("https://script.google.com/macros/s/AKfycbxb82qnnHVZlaywKSdojKhjdvoB62J6SjJnIWs184qpPQ8nKfF5HXt_MBgbDng9YYBOWA/exec", {
         method: "POST",
         body: JSON.stringify(scoreData),
         headers: { "Content-Type": "application/json" },
@@ -178,7 +178,7 @@
 
 
    function updateLeaderboard() {
-    fetch("https://script.google.com/macros/s/AKfycbwkKXvL_H770Zh0SwbcORsNTIbNfZnv7_3OsK1x9zEOX8JKsdg2N5euIiH4su3K_mGmkA/exec")
+    fetch("https://script.google.com/macros/s/AKfycbxb82qnnHVZlaywKSdojKhjdvoB62J6SjJnIWs184qpPQ8nKfF5HXt_MBgbDng9YYBOWA/exec")
     .then(response => response.text()) // Get the response as plain text
     .then(data => {
         if (data.trim() === "Error") {
